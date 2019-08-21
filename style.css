@@ -1,0 +1,213 @@
+@font-face {
+    font-family: "Gotham";
+    src:
+            url("font/Gotham-Bold.otf") format("opentype"),
+            url("font/GothamMedium.ttf") format("truetype");
+}
+
+body {
+    background: url("img/background.jpg") no-repeat;
+    object-fit: cover;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-container {
+    max-width: 37.5em;
+    width: 90%;
+    height: auto;
+    border-radius: 0.5em;
+    box-shadow: 0 0.25em 1em 0 rgba(0, 0, 0, 0.15);
+    background-color: #ffffff;
+    margin: auto;
+}
+
+.grid {
+    display: grid;
+    grid-auto-flow: row;
+    grid-gap: 1.5em;
+    padding: 1.2em;
+    justify-items: center;
+}
+
+.grid-param {
+    grid-row: auto;
+    border: none;
+    padding: 1em;
+}
+
+.grid-param-user {
+    grid-row: auto;
+    border: none;
+}
+
+.w-mercury-development {
+    width: 19.8em;
+    height: 4.3em;
+    object-fit: contain;
+    margin: 6.8em auto 5.8em;
+}
+
+.header {
+    max-width: 4.95em;
+    max-height: 1.8em;
+    opacity: 0.8;
+    font-family: Gotham, serif;
+    font-size: 1.5em;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 0.0125em;
+    text-align: center;
+    padding: 0.5em;
+}
+
+.submitButton {
+    max-width: 9.125em;
+    width: 60%;
+    max-height: 3em;
+    border-radius: 6.25em;
+    box-shadow: 0 0.25em 1em 0 rgba(237, 65, 89, 0.4);
+    background-color: #ed4159;
+    font-family: Gotham, serif;
+    font-size: 0.875em;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 2.5em;
+}
+
+
+.error-field {
+    width: 83.8%;
+    max-width: 31.5em;
+    max-height: 2.5em;
+    border-radius: 0.25em;
+    background-color: rgba(237, 65, 89, 0.25);
+    font-family: Gotham, serif;
+    font-size: 0.875em;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #ed4159;
+    text-align: start;
+}
+
+.input-field {
+    width: 84%;
+    max-width: 31.5em;
+    max-height: 3em;
+    border-radius: 0.25em;
+    background-color: #f1f1f1;
+    opacity: 0.8;
+    font-family: Gotham, serif;
+    font-size: 1em;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #262626;
+}
+
+.error {
+    color: #ed4159;
+    border: solid 1px #ed4159;
+    opacity: 1;
+}
+
+.input-field:default {
+    opacity: 0.4;
+}
+
+.hidden{
+    display: none;
+}
+
+.userName{
+    max-width: 13.25em;
+    max-height: 2.125em;
+    opacity: 0.8;
+    font-family: Gotham, serif;
+    font-size: 1.75em;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 0.015em;
+    text-align: center;
+    color: #262626;
+}
+
+.userPic{
+    width: 8em;
+    height: 8em;
+    border: solid 0.0625em #979797;
+}
+
+@media all and (max-width: 800px){
+    body{
+        font-size: 14px;
+    }
+}
+
+@media all and (max-width: 600px), all and (max-height: 700px) {
+    .w-mercury-development {
+        width: 14em;
+        height: 3em;
+        margin: 3.3em auto 2.85em;
+    }
+
+    .grid-param {
+        padding: 1.2em;
+    }
+
+    .form-container {
+        width: 90%;
+    }
+
+    .submitButton {
+        max-width: 11.15em;
+        max-height: 3.7em;
+    }
+
+    .userName {
+        font-size: 1.4em;
+    }
+    .userPic {
+        margin-top: 1em;
+    }
+}
+
+@media all and (min-width: 1921px) {
+    body {
+        background-image: url("img/background@2x.jpg");
+        font-size: 32px;
+    }
+    .form-container{
+        max-width: 1200px;
+    }
+
+}
+
+@media all and (min-width: 3841px) {
+    body {
+        background-image: url("img/background@3x.jpg");
+        font-size: 48px;
+    }
+    .form-container{
+        max-width: 1800px;
+    }
+}

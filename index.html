@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Login</title>
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+
+<div class="wrapper">
+    <img src="img/w-mercury-development.svg"
+         class="w-mercury-development">
+
+    <div class="form-container">
+        <form autocomplete="off" class="myForm grid">
+            <h2 class="header grid-param">Log In</h2>
+
+            <input class="input-field grid-param" type="email" name="email" id="email_address" placeholder="E-Mail"
+                   required>
+
+            <input class="input-field grid-param" type="text" name="password" id="password" placeholder="Password" required>
+
+            <output class="error-field hidden grid-param">E-Mail or password is incorrect</output>
+
+            <input type="submit" class="submitButton grid-param" value="Login">
+
+        </form>
+        <div class="userInfo hidden grid">
+            <img class="userPic grid-param-user" src="" alt="User">
+            <p class="userName grid-param-user"></p>
+            <button class="submitButton log-out grid-param grid-param-user">Logout</button>
+        </div>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
