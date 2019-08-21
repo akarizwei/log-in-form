@@ -178,6 +178,9 @@ body {
         width: 90%;
     }
 
+    .header{
+        margin: 0em;
+    }
     .submitButton {
         max-width: 11.15em;
         max-height: 3.7em;
